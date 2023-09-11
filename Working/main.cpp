@@ -10,10 +10,11 @@ int main() {
     auto x = 5;
     auto y = 47;
     cout << format("x is {}\n", x);
-    cout << format("y is {}\n", y);
+    cout << format("y is {}\n\n", y);
     
     x = y % x;
-    cout << format("x is {}\n", x);
+    if (x == y) cout << "true\n";
+    else cout << "false\n";
     
-    // % is modular which shows the remainder!
+    // control statement (if-else)
 }
