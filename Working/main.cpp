@@ -1,14 +1,14 @@
-//
-//  main.cpp
-//  Working
-//
-//  Created by Aneirin Wee on 11/9/23.
-//
-
+// operators.cpp by Bill Weinman [bw.org]
+// updated 2022-06-17
+#include <format>
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "For operator\n";
-    return 0;
+using std::format;
+using std::cout;
+
+int main() {
+    auto x = 5;
+    auto y = 47;
+    cout << format("x is {}\n", x);
+    cout << format("y is {}\n", y);
 }
