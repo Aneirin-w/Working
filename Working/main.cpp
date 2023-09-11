@@ -12,6 +12,8 @@ int main() {
     cout << format("x is {}\n", x);
     cout << format("y is {}\n", y);
     
-    x = y + x;
+    x = y % x;
     cout << format("x is {}\n", x);
+    
+    // % is modular which shows the remainder!
 }
