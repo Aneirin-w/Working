@@ -11,4 +11,7 @@ int main() {
     auto y = 47;
     cout << format("x is {}\n", x);
     cout << format("y is {}\n", y);
+    
+    x = y;
+    cout << format("x is {}\n", x);
 }
