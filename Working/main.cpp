@@ -12,6 +12,6 @@ int main() {
     cout << format("x is {}\n", x);
     cout << format("y is {}\n", y);
     
-    x = y;
+    x = y + x;
     cout << format("x is {}\n", x);
 }
