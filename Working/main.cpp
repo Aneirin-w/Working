@@ -25,11 +25,10 @@ int main()
     // new workings
     for (auto y = 2; y < 100; ++y){
         
-        bool prime_num {true}; // assigning prime_num to be true
+        bool prime_num = true; // assigning prime_num to be true
         for (auto factor = 2; factor < y; ++factor){
             if ( y % factor == 0){
                 prime_num = false;
-                break;
             }
         }if (prime_num) cout << y << " ";
     }
