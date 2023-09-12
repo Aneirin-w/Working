@@ -1,27 +1,22 @@
-// working.cpp by Bill Weinman [bw.org]
-// updated 2022-05-21
+// pointer-incr.cpp by Bill Weinman <http://bw.org/>
+// updated 2020-05-26
 #include <format>
 #include <iostream>
+#include <cstdint>
 
 using std::format;
 using std::cout;
 
+using int_type = uint8_t;
+
+void printp(const int_type* p) {
+    cout << format("pointer is {}, value is {}\n", static_cast<const void*>(p), *p);
+}
+
 int main() {
-    
-    auto x =5;
-    cout << format("x is {}\n", ++x);
-    cout << format("x is {}\n", ++x);
-    cout << format("x is {}\n", ++x);
-    
-    cout << format("\n");
-    
-    cout << format("x is {}\n", --x);
-    cout << format("x is {}\n", --x);
-    cout << format("x is {}\n", --x);
-    
-    cout << format("\n");
-    
-    cout << format("x is {}\n", x++);
-    // note where the "++" and "--" goes in reference to the variable
-    
+    int_type arr[] { 1, 2, 3, 4, 5 };
+    int_type* p = arr;
+    printp(p++);
+    printp(p++);
+    printp(p++);
 }
