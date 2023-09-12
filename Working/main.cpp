@@ -21,4 +21,19 @@ int main() {
     cout << format("size of c is {} bits\n", sizeof(c) * 8);
 
     // Bool type is usually 8 bits (see c)
+    
+    std::cout << "\n";
+    
+    if (a && b ) cout << "true\n";
+    else cout << "flase\n";
+    
+    if (a || b ) cout << "true\n";
+    else cout << "flase\n";
+    
+    if (!a ) cout << "true\n";
+    else cout << "flase\n";
+    
+    // and = &&
+    // or = ||
+    // not = !      eg not a = !a
 }
