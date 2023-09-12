@@ -36,4 +36,10 @@ int main() {
     // and = &&
     // or = ||
     // not = !      eg not a = !a
+    
+    std::cout << "\n";
+    if ( 42 > 5 || a ) cout << "true\n";
+    else cout << "flase\n";
+// first condiiton is satisfied, second condition is not operated 
+    
 }
