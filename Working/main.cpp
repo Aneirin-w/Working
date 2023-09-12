@@ -7,5 +7,10 @@ using std::format;
 using std::cout;
 
 int main() {
-    cout << "Hello, World!\n";
+    
+    auto x =5;
+    cout << format("x is {}\n", ++x);
+    cout << format("x is {}\n", ++x);
+    cout << format("x is {}\n", ++x);
+    
 }
