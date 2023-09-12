@@ -11,4 +11,8 @@ int main() {
     auto y = 47;
     cout << format("x is {}\n", x);
     cout << format("y is {}\n", y);
+    
+    x += y;
+    // compund evaluator. equals to X + Y
+    cout << format("x is {}\n", x);
 }
