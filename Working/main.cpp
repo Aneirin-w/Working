@@ -10,36 +10,5 @@ int main() {
     auto x = 5;
     auto y = 47;
     cout << format("x is {}\n", x);
-    cout << format("y is {}\n\n", y);
-    
-    bool a = true;
-    auto b = false;
-    bool c = true;
-    
-    cout << format("a is {}\n", a);
-    cout << format("b is {}\n", b);
-    cout << format("size of c is {} bits\n", sizeof(c) * 8);
-
-    // Bool type is usually 8 bits (see c)
-    
-    std::cout << "\n";
-    
-    if (a && b ) cout << "true\n";
-    else cout << "flase\n";
-    
-    if (a || b ) cout << "true\n";
-    else cout << "flase\n";
-    
-    if (!a ) cout << "true\n";
-    else cout << "flase\n";
-    
-    // and = &&
-    // or = ||
-    // not = !      eg not a = !a
-    
-    std::cout << "\n";
-    if ( 42 > 5 || a ) cout << "true\n";
-    else cout << "flase\n";
-// first condiiton is satisfied, second condition is not operated 
-    
+    cout << format("y is {}\n", y);
 }
