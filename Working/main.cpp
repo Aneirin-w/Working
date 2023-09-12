@@ -14,11 +14,11 @@ int main() {
     
     bool a = true;
     auto b = false;
-    bool c = 450;
+    bool c = true;
     
     cout << format("a is {}\n", a);
     cout << format("b is {}\n", b);
-    cout << format("c is {}\n", c);
+    cout << format("size of c is {} bits\n", sizeof(c) * 8);
 
-    // boolean, any non 0 = true
+    // Bool type is usually 8 bits (see c)
 }
