@@ -1,14 +1,11 @@
-//
-//  main.cpp
-//  Working
-//
-//  Created by Aneirin Wee on 11/9/23.
-//
-
+// working.cpp by Bill Weinman [bw.org]
+// updated 2022-05-21
+#include <format>
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "This is a test! I am changing stuff\n";
-    return 0;
+using std::format;
+using std::cout;
+
+int main() {
+    cout << "Hello, World!\n";
 }
