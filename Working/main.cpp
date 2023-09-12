@@ -7,7 +7,7 @@
 using std::format;
 using std::cout;
 
-using int_type = uint8_t;
+using int_type = uint8_t; //try changing to 16/32 bit and see what the incr is in the print.
 
 void printp(const int_type* p) {
     cout << format("pointer is {}, value is {}\n", static_cast<const void*>(p), *p);
@@ -19,4 +19,5 @@ int main() {
     printp(p++);
     printp(p++);
     printp(p++);
+    printp(++p);
 }
