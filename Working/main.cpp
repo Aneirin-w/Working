@@ -19,4 +19,9 @@ int main() {
     cout << format("x is {}\n", --x);
     cout << format("x is {}\n", --x);
     
+    cout << format("\n");
+    
+    cout << format("x is {}\n", x++);
+    // note where the "++" and "--" goes in reference to the variable
+    
 }
