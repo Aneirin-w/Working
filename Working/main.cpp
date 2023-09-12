@@ -12,9 +12,13 @@ int main() {
     cout << format("x is {}\n", x);
     cout << format("y is {}\n\n", y);
     
-    x = y % x;
-    if (x == y) cout << "true\n";
-    else cout << "false\n";
+    bool a = true;
+    auto b = false;
+    bool c = 450;
     
-    // control statement (if-else)
+    cout << format("a is {}\n", a);
+    cout << format("b is {}\n", b);
+    cout << format("c is {}\n", c);
+
+    // boolean, any non 0 = true
 }
